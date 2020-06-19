@@ -1,0 +1,43 @@
+{
+  "name": "node-template-with-typescript",
+  "version": "0.1.0",
+  "description": "Boiler template for NodeJS project with TypeScript",
+  "main": "dist/index.js",
+  "author": "",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "clean": "rimraf dist/*",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc",
+    "start": "node .",
+    "lint": "eslint --ext .ts,.js src/",
+    "format": "prettier --write src/**/*.{ts,js}",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,js}": [
+      "eslint --ext .ts,.js",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.49",
+    "typescript": "^3.9.5"
+  }
+}

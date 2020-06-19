@@ -2,6 +2,10 @@
   "name": "node-template-with-typescript",
   "version": "0.1.0",
   "description": "Boiler template for NodeJS project with TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koheitakumi/node-template-with-typescript.git"
+  },
   "main": "dist/index.js",
   "author": "",
   "license": "MIT",

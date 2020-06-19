@@ -17,6 +17,13 @@ We can start a new project with this clean template with TypeScript that keep th
    git clone https://github.com/koheitakumi/node-template-with-typescript.git YOUR_PROJECT_NAME
    ```
 
+1. Install packages.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
 1. Rename the project name
 
    - package.json

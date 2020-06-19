@@ -1,7 +1,7 @@
 # Boiler template for NodeJS project with TypeScript🎉
 
-created: 2020-06-19T13:48:17.539Z
-updated: 2020-06-19T14:20:46.152Z
+- created: 2020-06-19T13:48:17.539Z
+- updated: 2020-06-19T14:46:29.596Z
 
 ## Purpose
 
@@ -39,13 +39,27 @@ We can start a new project with this clean template with TypeScript that keep th
      - .gitignore
      - .prettierrc.js
      - tsconfig.json
+     - README.md
 
 1. Make your new repository on your Git service like GitHub.
 
-1. Commit these changes and push it into your Git repository. Please replace `YOUR_GIT_REPOSITORY_URL` to your repository URL.
+1. Commit these changes.
 
    ```bash
+   git add .
    git commit -m "first commit"
+   ```
+
+1. Push it into your Git repository. Please replace `YOUR_GIT_REPOSITORY_URL` to your repository URL.
+
+   ```bash
+   git remote -v
+   git push YOUR_GIT_REPOSITORY_URL master
+   ```
+   
+   or
+
+   ```bash
    git remote add origin YOUR_GIT_REPOSITORY_URL
    git push -u origin master
    ```

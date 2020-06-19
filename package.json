@@ -2,6 +2,9 @@
   "name": "node-template-with-typescript",
   "version": "0.1.0",
   "description": "Boiler template for NodeJS project with TypeScript",
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/koheitakumi/node-template-with-typescript.git"
